@@ -1,0 +1,712 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>收银系统首页</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="renderer" content="webkit">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="assets/i/app-icon72x72@2x.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" href="assets/css/app.css">
+		<script src="assets/js/echarts.min.js"></script>
+		<script src="assets/js/macarons.js"></script>
+	</head>
+
+		
+	<body data-type="index">
+
+		<header class="am-topbar am-topbar-inverse admin-header" >
+			<div class="am-topbar-brand">
+				<a href="javascript:;" class="tpl-logo">
+					<img src="assets/img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right"></div>
+			<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}">
+				<span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span>
+			</button>
+			<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+				<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="am-icon-bell-o"></span> 提醒 <span class="am-badge tpl-badge-success am-round">5</span></span>
+						</a>
+						<ul class="am-dropdown-content tpl-dropdown-content">
+							<li class="tpl-dropdown-content-external">
+								<a href="###"><h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3></a>
+							</li>
+							<li class="tpl-dropdown-list-bdbc">
+								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> 【预览模块】移动端 查看时 手机、电脑框隐藏。</a>
+								<span class="tpl-dropdown-list-fr">3小时前</span>
+							</li>
+							<li class="tpl-dropdown-list-bdbc">
+								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-check tpl-dropdown-ico-btn-size tpl-badge-danger"></span> 移动端，导航条下边距处理</a>
+								<span class="tpl-dropdown-list-fr">15分钟前</span>
+							</li>
+							<li class="tpl-dropdown-list-bdbc">
+								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-bell-o tpl-dropdown-ico-btn-size tpl-badge-warning"></span> 追加统计代码</a>
+								<span class="tpl-dropdown-list-fr">2天前</span>
+							</li>
+						</ul>
+					</li>
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="am-icon-comment-o"></span> 消息 <span class="am-badge tpl-badge-danger am-round">9</span></span>
+						</a>
+						<ul class="am-dropdown-content tpl-dropdown-content">
+							<li class="tpl-dropdown-content-external">
+									<a href="###"><h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3>
+							</a>
+							</li>
+							<li>
+								<a href="#" class="tpl-dropdown-content-message">
+									<span class="tpl-dropdown-content-photo">
+  										<img src="assets/img/user02.png" alt=""> 
+									</span>
+									<span class="tpl-dropdown-content-subject">
+  										<span class="tpl-dropdown-content-from"> 禁言小张 </span>
+									<span class="tpl-dropdown-content-time">10分钟前 </span>
+									</span>
+									<span class="tpl-dropdown-content-font"> Amaze UI 的诞生，依托于 GitHub 及其他技术社区上一些优秀的资源；Amaze UI 的成长，则离不开用户的支持。 </span>
+								</a>
+								<a href="#" class="tpl-dropdown-content-message">
+									<span class="tpl-dropdown-content-photo">
+  										<img src="assets/img/user03.png" alt=""> 
+									</span>
+									<span class="tpl-dropdown-content-subject">
+  										<span class="tpl-dropdown-content-from"> Steam </span>
+									<span class="tpl-dropdown-content-time">18分钟前</span>
+									</span>
+									<span class="tpl-dropdown-content-font"> 为了能最准确的传达所描述的问题， 建议你在反馈时附上演示，方便我们理解。 </span>
+								</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="am-icon-calendar"></span> 进度 <span class="am-badge tpl-badge-primary am-round">4</span></span>
+						</a>
+						<ul class="am-dropdown-content tpl-dropdown-content">
+							<li class="tpl-dropdown-content-external">
+								<a href="###"><h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="tpl-dropdown-content-progress">
+									<span class="task">
+										<span class="desc">Amaze UI 用户中心 v1.2 </span>
+									<span class="percent">45%</span>
+									</span>
+									<span class="progress">
+										<div class="am-progress tpl-progress am-progress-striped">
+											<div class="am-progress-bar am-progress-bar-success" style="width:45%"></div>
+										</div>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="tpl-dropdown-content-progress">
+									<span class="task">
+										<span class="desc">新闻内容页 </span>
+									<span class="percent">30%</span>
+									</span>
+									<span class="progress">
+									   <div class="am-progress tpl-progress am-progress-striped">
+									   	<div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div>
+									   </div>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="tpl-dropdown-content-progress">
+									<span class="task">
+										<span class="desc">管理中心 </span>
+									<span class="percent">60%</span>
+									</span>
+									<span class="progress">
+										<div class="am-progress tpl-progress am-progress-striped">
+											<div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div>
+										</div>
+									</span>
+								</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="am-hide-sm-only">
+						<a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a>
+					</li>
+
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
+						</a>
+						<ul class="am-dropdown-content">
+							<li>
+								<a href="#"><span class="am-icon-bell-o"></span> 资料</a>
+							</li>
+							<li>
+								<a href="#"><span class="am-icon-cog"></span> 设置</a>
+							</li>
+							<li>
+								<a href="#"><span class="am-icon-power-off"></span> 退出</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="tpl-page-container tpl-page-header-fixed">
+			<div class="tpl-left-nav tpl-left-nav-hover" id="nav_left">
+				<!--左侧菜单栏-->
+			</div>
+			<div class="tpl-content-wrapper">
+				<!--导航标题-->
+				<ol class="am-breadcrumb">
+					<li>
+						<a href="#" class="am-icon-home">门店概览</a>
+					</li>
+					<li>
+						<a href="#">门店</a>
+					</li>
+					<li class="am-active">概览</li>
+				</ol>
+				<div class="row">
+					<div class="am-u-lg-2 am-u-md-6 am-u-sm-12">
+						<div class="dashboard-stat blue">
+							<div class="visual">
+								<i class="am-icon-comments-o"></i>
+							</div>
+							<div class="details">
+								<div class="number"> 0条 </div>
+								<div class="desc"> 短信余额 </div>
+							</div>
+							<a class="more" href="#"> 查看更多
+								<i class="m-icon-swapright m-icon-white"></i>
+							</a>
+						</div>
+					</div>
+					<div class="am-u-lg-2 am-u-md-6 am-u-sm-12">
+						<div class="dashboard-stat red">
+							<div class="visual">
+								<i class="am-icon-archive"></i>
+							</div>
+							<div class="details">
+								<div class="number"> 0个 </div>
+								<div class="desc"> 库存不足 </div>
+							</div>
+							<a class="more" href="#"> 查看更多
+								<i class="m-icon-swapright m-icon-white"></i>
+							</a>
+						</div>
+					</div>
+					<div class="am-u-lg-2 am-u-md-6 am-u-sm-12">
+						<div class="dashboard-stat green">
+							<div class="visual">
+								<i class="am-icon-birthday-cake"></i>
+							</div>
+							<div class="details">
+								<div class="number"> 0个 </div>
+								<div class="desc"> 生日会员 </div>
+							</div>
+							<a class="more" href="#"> 查看更多
+								<i class="m-icon-swapright m-icon-white"></i>
+							</a>
+						</div>
+					</div>
+					<div class="am-u-lg-2 am-u-md-6 am-u-sm-12">
+						<div class="dashboard-stat purple">
+							<div class="visual">
+								<i class="am-icon-car"></i>
+							</div>
+							<div class="details">
+								<div class="number"> 0条 </div>
+								<div class="desc"> 订货需求 </div>
+							</div>
+							<a class="more" href="#"> 查看更多
+								<i class="m-icon-swapright m-icon-white"></i>
+							</a>
+						</div>
+					</div>
+					<div class="am-u-lg-2 am-u-md-6 am-u-sm-12">
+						<div class="dashboard-stat cyan">
+							<div class="visual">
+								<i class="am-icon-file-text"></i>
+							</div>
+							<div class="details">
+								<div class="number"> 0条 </div>
+								<div class="desc"> 货流单数 </div>
+							</div>
+							<a class="more" href="#"> 查看更多
+								<i class="m-icon-swapright m-icon-white"></i>
+							</a>
+						</div>
+					</div>
+					<div class="am-u-lg-2 am-u-md-6 am-u-sm-12">
+						<div class="dashboard-stat orange">
+							<div class="visual">
+								<i class="am-icon-cny"></i>
+							</div>
+							<div class="details">
+								<div class="number"> 0元 </div>
+								<div class="desc"> 报损金额 </div>
+							</div>
+							<a class="more" href="#"> 查看更多
+								<i class="m-icon-swapright m-icon-white"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="am-u-md-12 am-u-sm-12 row-mb">
+						<div class="tpl-portlet">
+							<div class="tpl-portlet-title">
+								<div class="tpl-caption font-green ">
+									<span class="bold">交易概览</span>
+								</div>
+							</div>
+							<div class="am-tabs tpl-index-tabs" data-am-tabs>
+								<div class="am-tabs" data-am-tabs>
+									<ul class="am-tabs-nav am-nav am-nav-tabs">
+										<li class="am-active">
+											<a href="#tab1">今日概况</a>
+										</li>
+										<li>
+											<a href="#tab2">昨日概况</a>
+										</li>
+									</ul>
+
+									<div class="am-tabs-bd">
+										<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+											<table class="am-table am-table-striped">
+												<thead>
+													<tr>
+														<th>项目</th>
+														<th>概况</th>
+														<th>现金支付</th>
+														<th>银联支付</th>
+														<th>储值卡支付</th>
+														<th>次卡支付</th>
+														<th>购物卡支付</th>
+														<th>预付卡支付</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><span class="font-green">商品销售</span></td>
+														<td>销售额 <span class="font-green">0.00</span>, 利润<span class="font-green">0.00</span>, 单数 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">储值卡充值</span></td>
+														<td>充值 <span class="font-green">0</span>, 赠送 <span class="font-green">0</span>, 单数<span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">次卡销售</span></td>
+														<td>金额 <span class="font-green">0</span>, 购买 <span class="font-green">0</span>, 退卡 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">购物卡充值</span></td>
+														<td>充值 <span class="font-green">0</span>, 赠送 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">预付卡销售</span></td>
+														<td>销售总额 <span class="font-green">0</span>, 卡面总额 <span class="font-green">0</span>, 销售张数 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">现金收支</span></td>
+														<td>收入<span class="font-green">0</span>, 支出 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">总计</span></td>
+														<td>-</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="am-tab-panel am-fade" id="tab2">
+											<table class="am-table am-table-striped">
+												<thead>
+													<tr>
+														<th>项目</th>
+														<th>概况</th>
+														<th>现金支付</th>
+														<th>银联支付</th>
+														<th>储值卡支付</th>
+														<th>次卡支付</th>
+														<th>购物卡支付</th>
+														<th>预付卡支付</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><span class="font-green">商品销售</span></td>
+														<td>销售额 <span class="font-green">0.00</span>, 利润<span class="font-green">0.00</span>, 单数 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">储值卡充值</span></td>
+														<td>充值 <span class="font-green">0</span>, 赠送 <span class="font-green">0</span>, 单数<span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">次卡销售</span></td>
+														<td>金额 <span class="font-green">0</span>, 购买 <span class="font-green">0</span>, 退卡 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">购物卡充值</span></td>
+														<td>充值 <span class="font-green">0</span>, 赠送 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">预付卡销售</span></td>
+														<td>销售总额 <span class="font-green">0</span>, 卡面总额 <span class="font-green">0</span>, 销售张数 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">现金收支</span></td>
+														<td>收入<span class="font-green">0</span>, 支出 <span class="font-green">0</span></td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+													<tr>
+														<td><span class="font-green">总计</span></td>
+														<td>-</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+														<td>0.00</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="am-u-md-12 am-u-sm-12 row-mb">
+						<div class="tpl-portlet">
+							<div class="tpl-portlet-title" style="overflow: inherit;">
+								<div class="tpl-caption font-green ">
+									<span class="bold">敏感操作数据</span>
+								</div>
+								<div class="am-fr">
+									<select data-am-selected="{btnSize: 'xm'}" style="display: none;">
+										<option value="option1">今天</option>
+										<option value="option2">昨天</option>
+										<option value="option3">前天</option>
+										<option value="option3">最近7天</option>
+										<option value="option3">最近14天</option>
+										<option value="option3">最近30天</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="">
+								<table class="am-table am-table-striped">
+									<thead>
+										<tr>
+											<th>操作</th>
+											<th>单数</th>
+											<th>商品数量</th>
+											<th>金额</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="font-green bold">反结账</span></td>
+											<td>0</td>
+											<td>0</td>
+											<td>0.00</td>
+										</tr>
+										<tr>
+											<td><span class="font-green bold">退菜</span></td>
+											<td>0</td>
+											<td>0</td>
+											<td>0.00</td>
+										</tr>
+										<tr>
+											<td><span class="font-green bold">免单</span></td>
+											<td>0</td>
+											<td>0</td>
+											<td>0.00</td>
+										</tr>
+										<tr>
+											<td><span class="font-green bold">赠送</span></td>
+											<td>0</td>
+											<td>0</td>
+											<td>0.00</td>
+										</tr>
+										<tr>
+											<td><span class="font-green bold">撤单</span></td>
+											<td>0</td>
+											<td>0</td>
+											<td>0.00</td>
+										</tr>
+										<tr>
+											<td><span class="font-green bold">撤菜</span></td>
+											<td>0</td>
+											<td>0</td>
+											<td>0.00</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="am-u-md-12 am-u-sm-12 row-mb">
+						<div class="tpl-portlet">
+							<div class="tpl-portlet-title" style="overflow: inherit;">
+								<div class="tpl-caption font-green ">
+									<span class="bold">会员消费统计</span>
+								</div>
+								<div class="am-fr">
+									<select data-am-selected="{btnSize: 'xm'}" style="display: none;">
+										<option value="option1">最近14天</option>
+										<option value="option2">最近30天</option>
+										<option value="option3">最近60天</option>
+										<option value="option3">最近90天</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="am-u-md-4 am-u-sm-12 row-mb">
+									<div id="main" style="width: 100%;height:290px;"></div>
+								</div>
+								<div class="am-u-md-8 am-u-sm-12 row-mb">
+									<table class="am-table am-table-striped am-table-hover">
+										<thead>
+											<tr>
+												<th colspan="3"style="text-align: center;">
+													<span class="bold font-green">
+														会员活跃分布图
+													</span>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>消费<span class="bold font-green">15</span>次以上</td>
+												<td><span class="bold font-green">0</span>人</td>
+												<td><span class="bold font-green">0</span>%</td>
+											</tr>
+											<tr>
+												<td>消费<span class="bold font-green">10-14</span>次</td>
+												<td><span class="bold font-green">0</span>人</td>
+												<td><span class="bold font-green">0</span>%</td>
+											</tr>
+											<tr>
+												<td>消费<span class="bold font-green">5-9</span>次</td>
+												<td><span class="bold font-green">0</span>人</td>
+												<td><span class="bold font-green">0</span>%</td>
+											</tr>
+											<tr>
+												<td>消费<span class="bold font-green">2-4</span>次</td>
+												<td><span class="bold font-green">0</span>人</td>
+												<td><span class="bold font-green">0</span>%</td>
+											</tr>
+											<tr>
+												<td>消费<span class="bold font-green">1</span>次</td>
+												<td><span class="bold font-green">0</span>人</td>
+												<td><span class="bold font-green">0</span>%</td>
+											</tr>
+											<tr>
+												<td>无消费</td>
+												<td><span class="bold font-green">0</span>人</td>
+												<td><span class="bold font-green">0</span>%</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/amazeui.min.js"></script>
+	<script src="assets/js/iscroll.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script type="text/javascript">
+		 // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'),"walden");
+     
+		option = {
+			tooltip: {
+				trigger: 'item',
+				formatter: "{a} <br/>{b}: {c} ({d}%)"
+			},
+			legend: {
+				orient: 'vertical',
+				x: 'left',
+				data: ['新增会员', '历史会员', '全部会员']
+
+			},
+			series: [{
+					name: '金额',
+					type: 'pie',
+					selectedMode: 'single',
+					radius: [0, '30%'],
+					label: {
+						normal: {
+							position: 'inner',
+							textStyle:{
+								color:"black",
+							}
+						}
+					},
+					labelLine: {
+						normal: {
+							show: false
+						}
+					},
+					data: [{
+							value: 0,
+							name: '新增会员',
+							selected: true
+						},
+						{
+							value: 0,
+							name: '历史会员'
+						},
+						{
+							value: 0,
+							name: '全部会员'
+						}
+					]
+				},
+				{
+					name: '单数',
+					type: 'pie',
+					radius: ['40%', '50%'],
+					label: {
+						normal: {
+							formatter: '{b}',
+						}
+					},
+					data: [{
+							value: 0,
+							name: '新增会员'
+						},
+						{
+							value: 0,
+							name: '历史会员'
+						},
+						{
+							value: 0,
+							name: '全部会员'
+						}
+					]
+				}
+			]
+		};
+		
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+//  	myChart.setOption({
+//			textStyle: {
+//  			color: 'black'
+//			}
+//		})
+
+	</script>
+
+</html>
