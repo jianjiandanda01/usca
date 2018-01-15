@@ -1,0 +1,12 @@
+.mCS_img_loaded{
+	background-position: -320px -50px;
+	width: 7px;
+    height: 16px;
+    margin: 0 0 -1px 5px;
+    background: url(../img/icon.png) -310px -50px no-repeat;
+    cursor: pointer;
+}
+.tit_had .sel_box{
+	display: inline;
+	width: 100px;
+}
