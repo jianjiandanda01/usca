@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>收银系统首页</title>
+		<meta name="description" content="这是一个 index 页面">
+		<meta name="keywords" content="index">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link rel="icon" type="image/png" href="assets/i/app-icon72x72@2x.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/netWorkShop.css" />
+		<link rel="stylesheet" href="assets/css/admin.css">
+		<link rel="stylesheet" href="assets/css/app.css">
+		<script src="assets/js/echarts.min.js"></script>
+		<script src="assets/js/macarons.js"></script>
+	</head>
+
+	<body data-type="index">
+
+		<header class="am-topbar am-topbar-inverse admin-header">
+			<div class="am-topbar-brand">
+				<a href="javascript:;" class="tpl-logo">
+					<img src="assets/img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right"></div>
+			<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}">
+				<span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span>
+			</button>
+			<div class="am-collapse am-topbar-collapse" id="topbar-collapse">
+				<ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="am-icon-bell-o"></span> 提醒 <span class="am-badge tpl-badge-success am-round">5</span></span>
+						</a>
+						<ul class="am-dropdown-content tpl-dropdown-content">
+							<li class="tpl-dropdown-content-external">
+								<a href="###">
+									<h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3></a>
+							</li>
+							<li class="tpl-dropdown-list-bdbc">
+								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> 【预览模块】移动端 查看时 手机、电脑框隐藏。</a>
+								<span class="tpl-dropdown-list-fr">3小时前</span>
+							</li>
+							<li class="tpl-dropdown-list-bdbc">
+								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-check tpl-dropdown-ico-btn-size tpl-badge-danger"></span> 移动端，导航条下边距处理</a>
+								<span class="tpl-dropdown-list-fr">15分钟前</span>
+							</li>
+							<li class="tpl-dropdown-list-bdbc">
+								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-bell-o tpl-dropdown-ico-btn-size tpl-badge-warning"></span> 追加统计代码</a>
+								<span class="tpl-dropdown-list-fr">2天前</span>
+							</li>
+						</ul>
+					</li>
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="am-icon-comment-o"></span> 消息 <span class="am-badge tpl-badge-danger am-round">9</span></span>
+						</a>
+						<ul class="am-dropdown-content tpl-dropdown-content">
+							<li class="tpl-dropdown-content-external">
+								<a href="###">
+									<h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="tpl-dropdown-content-message">
+									<span class="tpl-dropdown-content-photo">
+  										<img src="assets/img/user02.png" alt=""> 
+									</span>
+									<span class="tpl-dropdown-content-subject">
+  										<span class="tpl-dropdown-content-from"> 禁言小张 </span>
+									<span class="tpl-dropdown-content-time">10分钟前 </span>
+									</span>
+									<span class="tpl-dropdown-content-font"> Amaze UI 的诞生，依托于 GitHub 及其他技术社区上一些优秀的资源；Amaze UI 的成长，则离不开用户的支持。 </span>
+								</a>
+								<a href="#" class="tpl-dropdown-content-message">
+									<span class="tpl-dropdown-content-photo">
+  										<img src="assets/img/user03.png" alt=""> 
+									</span>
+									<span class="tpl-dropdown-content-subject">
+  										<span class="tpl-dropdown-content-from"> Steam </span>
+									<span class="tpl-dropdown-content-time">18分钟前</span>
+									</span>
+									<span class="tpl-dropdown-content-font"> 为了能最准确的传达所描述的问题， 建议你在反馈时附上演示，方便我们理解。 </span>
+								</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="am-icon-calendar"></span> 进度 <span class="am-badge tpl-badge-primary am-round">4</span></span>
+						</a>
+						<ul class="am-dropdown-content tpl-dropdown-content">
+							<li class="tpl-dropdown-content-external">
+								<a href="###">
+									<h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="tpl-dropdown-content-progress">
+									<span class="task">
+										<span class="desc">Amaze UI 用户中心 v1.2 </span>
+									<span class="percent">45%</span>
+									</span>
+									<span class="progress">
+										<div class="am-progress tpl-progress am-progress-striped">
+											<div class="am-progress-bar am-progress-bar-success" style="width:45%"></div>
+										</div>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="tpl-dropdown-content-progress">
+									<span class="task">
+										<span class="desc">新闻内容页 </span>
+									<span class="percent">30%</span>
+									</span>
+									<span class="progress">
+									   <div class="am-progress tpl-progress am-progress-striped">
+									   	<div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div>
+									   </div>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="tpl-dropdown-content-progress">
+									<span class="task">
+										<span class="desc">管理中心 </span>
+									<span class="percent">60%</span>
+									</span>
+									<span class="progress">
+										<div class="am-progress tpl-progress am-progress-striped">
+											<div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div>
+										</div>
+									</span>
+								</a>
+							</li>
+
+						</ul>
+					</li>
+					<li class="am-hide-sm-only">
+						<a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">开启全屏</span></a>
+					</li>
+
+					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
+						<a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
+							<span class="tpl-header-list-user-nick">禁言小张</span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
+						</a>
+						<ul class="am-dropdown-content">
+							<li>
+								<a href="#"><span class="am-icon-bell-o"></span> 资料</a>
+							</li>
+							<li>
+								<a href="#"><span class="am-icon-cog"></span> 设置</a>
+							</li>
+							<li>
+								<a href="#"><span class="am-icon-power-off"></span> 退出</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="tpl-page-container tpl-page-header-fixed">
+			<div class="tpl-left-nav tpl-left-nav-hover" id="nav_left">
+				<!--左侧菜单栏-->
+			</div>
+			<div class="tpl-content-wrapper">
+				<!--导航标题-->
+				<ol class="am-breadcrumb">
+					<li>
+						<a href="#" class="am-icon-home">门店概览</a>
+					</li>
+					<li>
+						<a href="#">网店</a>
+					</li>
+					<li class="am-active">网店设置</li>
+				</ol>
+				<div class="row">
+					<div class="am-u-md-12 am-u-sm-12 row-mb">
+						<div class="tpl-portlet">
+							<div class="tpl-portlet-title" style="overflow: inherit;">
+								<span class="bold">网店设置</span>
+							</div>
+							<div class="tpl-block">
+
+								<div class="am-g">
+									<div class="tpl-form-body tpl-form-line">
+										<form class="am-form tpl-form-line-form">
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店状态 <span class="tpl-form-line-small-title">开启和关闭网店服务</span></label>
+												
+											<div class="tpl-switch am-fr">
+												<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+													<div class="tpl-switch-btn-view">
+														<div>
+														</div>
+													</div>
+											</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店URL <span class="tpl-form-line-small-title">WWWmeilian.pospal.cn</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-success am-fr am-btn-sm">微店二维码</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">微店模板<span class="tpl-form-line-small-title">WWWmeilian.pospal.cn</span></label>
+												
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-primary am-fr am-btn-sm">保存</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店LOGO<span class="tpl-form-line-small-title"></span></label>
+													<span id="" class="login">
+														<img src="assets/img/Shoplogo.png" width="30px" height="30px"/>
+														<input class="file_up" type="file" name="" id="" value="请选择您需要的Logo" />
+													</span>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">营业时间<span class="tpl-form-line-small-title">
+													10:39:00 - 23:59:59，10:59:00 - 18:59:59
+													<!--<input type="date" name="" id="" value="" /><span>&nbsp&nbsp-&nbsp&nbsp</span><input type="date" name="" id="" value="" />-->
+												</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">下单限制<span class="tpl-form-line-small-title">非运营时间是否允许下单</span></label>
+												<div class="am-u-sm-9">
+												</div>
+													<div class="right_btn am-fr btn_floag">
+														<div class="tpl-switch am-fr">
+															<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+																<div class="tpl-switch-btn-view">
+																	<div>
+																	</div>
+																</div>
+														</div>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">配送条件<span class="tpl-form-line-small-title">可按配送距离设置起送价、配送费、送货时长等参数</span></label>
+													<div class=" right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">下单提醒<span class="tpl-form-line-small-title">无</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">消费方式<span class="tpl-form-line-small-title">外卖</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">支付方式<span class="tpl-form-line-small-title">送货上门、会员余额支付</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店推广<span class="tpl-form-line-small-title">App新会员赠送 0 元</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">签到奖励<span class="tpl-form-line-small-title">未开启</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">积分抵现<span class="tpl-form-line-small-title">会员在网店消费，是否允许积分抵现</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<div class="tpl-switch am-fr">
+															<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+																<div class="tpl-switch-btn-view">
+																	<div>
+																	</div>
+																</div>
+														</div>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">零库存销售<span class="tpl-form-line-small-title">商品库存低于0时，网店是否允许销售</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<div class="tpl-switch am-fr">
+															<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+																<div class="tpl-switch-btn-view">
+																	<div>
+																	</div>
+																</div>
+														</div>
+													</div>
+											</div>
+											<div class="txt">
+												<textarea class="text_boxs" name="" id="text_boxs" cols="100" rows="5">网店简介</textarea>
+												<div class="tpl-switch am-fr preservation am-fr txt_btn">
+													<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn " checked />
+													<div class="tpl-switch-btn-view">
+														<div>
+														</div>
+													</div>
+												</div>
+												<div id="" class="btm_text">
+													<span  class="tpl-form-line-small-title">网店简介不超过150字</span>
+													<span class="txt_right">还剩<span class="red_text">150</span>字</span>
+												</div>
+
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/amazeui.min.js"></script>
+	<script src="assets/js/iscroll.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script type="text/javascript">
+	</script>
+
+</html>
