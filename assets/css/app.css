@@ -1800,7 +1800,6 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 .tpl-form-line-form .am-form-label .tpl-form-line-small-title {
     color: #999;
     font-size: 12px;
-    margin-left: 10px;
 }
 
 .tpl-form-no-bg {
@@ -2043,23 +2042,72 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
         padding-left: 0;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*加通用css*/
+.dis_none{
+	display: none;
+}
+.dis_block{
+	display: block;
+}
 /*加改css*/
 .emphasesText{
 	color: black;
 }
-.am-form-group{
-	border-bottom: 1px solid #eee;
-}
-#text_boxs{
+/*文件分类页面css*/
+.file_fr{
+	margin-left: 15%;
 	display: inline-block;
-	width: 70%;
 }
-.txt{
-	position: relative;
-}
-.txt_btn{
-	position: absolute;
-	bottom: 30px;
-	right: 0;
-}
-

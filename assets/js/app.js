@@ -50,6 +50,22 @@ $(function() {
 			$(".nav_a_class").eq(0).addClass("active");
 		}
 	});
+	
+	
+	
+	
+	
+	
+	
+	//VUE封装方法
+	function NewVueFun(el,data){
+		return new Vue({
+			  el: el,
+			  data: data
+		})
+	}
+	
+
 })
 
 // ==========================
@@ -66,6 +82,21 @@ function getUrlParam(name) {
 	var r = window.location.search.substr(1).match(reg); //匹配目标参数
 	if(r != null) return unescape(r[2]);
 	return null; //返回参数值
+}
+//AJAX封装方法
+function AJAXData(url,type,data,fun){
+	$.ajax({
+		type:type,
+		url:url,
+		data:data,
+		success:function(res){
+			fun(res)
+		},
+		error:function(res){
+			console.log("链接出错!!!---------------");
+			console.log(res);
+		}
+	});
 }
 // 页面数据
 //var pageData = {

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>日结记录</title>
+		<title>收银系统首页</title>
 		<meta name="description" content="这是一个 index 页面">
 		<meta name="keywords" content="index">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,11 +19,13 @@
 		<link rel="stylesheet" href="assets/css/app.css">
 		<script src="assets/js/echarts.min.js"></script>
 		<script src="assets/js/macarons.js"></script>
+
+		<link rel="stylesheet" href="assets/css/bootstrapStyle.css" type="text/css">
 	</head>
 
 	<body data-type="index">
 
-		<header class="am-topbar am-topbar-inverse admin-header" >
+		<header class="am-topbar am-topbar-inverse admin-header">
 			<div class="am-topbar-brand">
 				<a href="javascript:;" class="tpl-logo">
 					<img src="assets/img/logo.png" alt="">
@@ -41,7 +43,8 @@
 						</a>
 						<ul class="am-dropdown-content tpl-dropdown-content">
 							<li class="tpl-dropdown-content-external">
-								<a href="###"><h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3></a>
+								<a href="###">
+									<h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3></a>
 							</li>
 							<li class="tpl-dropdown-list-bdbc">
 								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> 【预览模块】移动端 查看时 手机、电脑框隐藏。</a>
@@ -63,8 +66,9 @@
 						</a>
 						<ul class="am-dropdown-content tpl-dropdown-content">
 							<li class="tpl-dropdown-content-external">
-									<a href="###"><h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3>
-							</a>
+								<a href="###">
+									<h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3>
+								</a>
 							</li>
 							<li>
 								<a href="#" class="tpl-dropdown-content-message">
@@ -97,7 +101,8 @@
 						</a>
 						<ul class="am-dropdown-content tpl-dropdown-content">
 							<li class="tpl-dropdown-content-external">
-								<a href="###"><h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3>
+								<a href="###">
+									<h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3>
 								</a>
 							</li>
 							<li>
@@ -172,58 +177,132 @@
 			<div class="tpl-left-nav tpl-left-nav-hover" id="nav_left">
 				<!--左侧菜单栏-->
 			</div>
-		
 			<div class="tpl-content-wrapper">
+
 				<!--导航标题-->
 				<ol class="am-breadcrumb">
 					<li>
 						<a href="#" class="am-icon-home">门店概览</a>
 					</li>
 					<li>
-						<a href="#">销售</a>
+						<a href="#">商品</a>
 					</li>
-					<li class="am-active">日结记录</li>
+					<li class="am-active">商品分类</li>
 				</ol>
-				<div class="tpl-portlet-title" style="overflow: inherit;">
-					<button type="button" class="am-btn am-btn-secondary btn_export">导出</button>
-					<div class="am-center am-form am-form-inline am-fr">
-						
-						<div class="am-form-group am-form-icon">
-							<i class="am-icon-calendar"></i>
-							<input type="date" class="am-form-field" placeholder="日期">
+				<div class="row">
+					<div class="am-u-md-12 am-u-sm-12 row-mb">
+
+						<div class="tpl-portlet" id="sidebar">
+							<div class="tpl-portlet-title">
+								<div class="tpl-caption font-green ">
+									<div class="am-btn-group am-btn-group-xs">
+										<button id="save" type="button" class="am-btn am-btn-default am-btn-secondary">
+	                                    	<span class="am-icon-save"></span> 
+	                                    	保存
+	                                    </button>
+									</div>
+								</div>
+							</div>
+							<div class="">
+								<ul id="treeDemo" class="ztree"></ul>
+							</div>
 						</div>
-						
-						<button class="am-form-group am-btn am-btn-success">
-							查询
-						</button>
 					</div>
 				</div>
-				<div class="tpl-portlet">
-			<table class="am-table am-table-striped am-table-hover table-main">
-	             <thead>
-	                <tr>
-	                    <th class="table-title">操作</th>
-	                    <th class="table-date">开始时间</th>
-	                    <th class="table-date">结束时间</th>
-	                    <th class="table-title">收银员</th>
-	                    <th class="table-author am-hide-sm-only">收银总额</th>
-	                    <th class="table-date am-hide-sm-only">银联支付</th>
-	                    <th class="table-set">存储卡支付</th>
-	                </tr>
-	            </thead>
-	            <tbody>
-	                <tr>
-	                    <td colspan="7">暂无数据</td>
-	 				</tr>
-				</tbody>
-	      </table>	
-	        </div>
+			</div>
 		</div>
-		</div>
-		
 	</body>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/amazeui.min.js"></script>
 	<script src="assets/js/iscroll.js"></script>
 	<script src="assets/js/app.js"></script>
+
+	<script type="text/javascript" src="assets/js/jquery.ztree.core.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.ztree.excheck.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.ztree.exedit.js"></script>
+
+	<SCRIPT type="text/javascript">
+		var setting = {
+			view: {
+				addHoverDom: addHoverDom,
+				removeHoverDom: removeHoverDom,
+				selectedMulti: false
+			},
+			check: {
+				enable: true
+			},
+			data: {
+				simpleData: {
+					enable: true
+				}
+			},
+			edit: {
+				enable: true
+			}
+		};
+
+		AJAXData("json/zTree-data.json", "get", {}, function(res) {
+			$(document).ready(function() {
+				$.fn.zTree.init($("#treeDemo"), setting, res.list);
+			});
+		})
+
+		var newCount = 1;
+
+		function addHoverDom(treeId, treeNode) {
+			//添加一个文件
+			var sObj = $("#" + treeNode.tId + "_span");
+			if(treeNode.editNameFlag || $("#addBtn_" + treeNode.tId).length > 0) {} else {
+				var addStr = "<span class='button add' id='addBtn_" + treeNode.tId + "' title='add node' onfocus='this.blur();'></span>";
+				sObj.after(addStr);
+				var btn = $("#addBtn_" + treeNode.tId);
+				if(btn) btn.bind("click", function() {
+					var zTree = $.fn.zTree.getZTreeObj("treeDemo");
+					zTree.addNodes(treeNode, {
+						id: (1000 + newCount),
+						pId: treeNode.id,
+						name: "new node" + (newCount++)
+					});
+				});
+			};
+
+			//是否显示文件
+			var sObj1 = $("#" + treeNode.tId + "_span");
+			if(treeNode.editNameFlag || $("#addBtn1_" + treeNode.tId).length > 0) {} else {
+				var addStr1 = "<span class='button ";
+				if(treeNode.look) {
+					addStr1 += "eye";
+				} else {
+					addStr1 += "eye-slash";
+				}
+				addStr1 += "' id='addBtn1_" + treeNode.tId + "' title='add node123'></span>";
+				sObj1.after(addStr1);
+				var btn1 = $("#addBtn1_" + treeNode.tId);
+				if(btn1) {
+					btn1.bind("click", function() {
+						console.log(this.className);
+						if(this.className == "button eye") {
+							this.className = 'button eye-slash';
+							treeNode.look = false;
+						} else {
+							this.className = 'button eye';
+							treeNode.look = true;
+						};
+					});
+				}
+			};
+		};
+
+		function removeHoverDom(treeId, treeNode) {
+			$("#addBtn_" + treeNode.tId).unbind().remove();
+			$("#addBtn1_" + treeNode.tId).unbind().remove();
+		};
+		$("#save").click(function() {
+			var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
+			//      	console.log(treeObj.getNodes())
+			var nodes = treeObj.transformToArray(treeObj.getNodes());
+			console.log(nodes)
+		})
+	</SCRIPT>
+
 </html>
