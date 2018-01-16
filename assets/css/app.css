@@ -1800,6 +1800,7 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 .tpl-form-line-form .am-form-label .tpl-form-line-small-title {
     color: #999;
     font-size: 12px;
+    margin-left: 10px;
 }
 
 .tpl-form-no-bg {
@@ -2046,3 +2047,19 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 .emphasesText{
 	color: black;
 }
+.am-form-group{
+	border-bottom: 1px solid #eee;
+}
+#text_boxs{
+	display: inline-block;
+	width: 70%;
+}
+.txt{
+	position: relative;
+}
+.txt_btn{
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+}
+

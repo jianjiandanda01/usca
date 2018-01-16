@@ -1,25 +1,10 @@
-.right_btn{
-	width: 100PX;
-	display: inline-block;
+.red_text{
+	color: red;
 }
-.tpl-portlet-components .portlet-title .caption {
-	padding: 4px 0;
-	font-size: 15px;
+.txt_right{
+	float: right;
+	margin-right: 30%;
 }
-.tpl-switch input[type="checkbox"].ios-switch+div{
-margin-top: -2px;
-}
-/*.tit_list{
-	margin: 0 0;
-}*/
-.text_{
-	color: #999;
-	margin-left: 20px;
+.btm_text{
 	font-size: 12px;
-}
-.first_text{
-	font-size: 16px;
-}
-.text_boxs{
-	display: block;
 }

@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>网店设置</title>
+		<title>收银系统首页</title>
 		<meta name="description" content="这是一个 index 页面">
 		<meta name="keywords" content="index">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,14 +13,13 @@
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<link rel="icon" type="image/png" href="assets/i/app-icon72x72@2x.png">
 		<link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-		<link rel="stylesheet" type="text/css" href="assets/css/sales_statistics_taste.css" />
 		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
 		<link rel="stylesheet" href="assets/css/amazeui.min.css" />
+		<link rel="stylesheet" href="assets/css/netWorkShop.css" />
 		<link rel="stylesheet" href="assets/css/admin.css">
 		<link rel="stylesheet" href="assets/css/app.css">
 		<script src="assets/js/echarts.min.js"></script>
 		<script src="assets/js/macarons.js"></script>
-		<link rel="stylesheet" type="text/css" href="assets/css/netWorkShop.css" />
 	</head>
 
 	<body data-type="index">
@@ -177,183 +176,174 @@
 			<div class="tpl-left-nav tpl-left-nav-hover" id="nav_left">
 				<!--左侧菜单栏-->
 			</div>
-
 			<div class="tpl-content-wrapper">
 				<!--导航标题-->
+				<ol class="am-breadcrumb">
+					<li>
+						<a href="#" class="am-icon-home">门店概览</a>
+					</li>
+					<li>
+						<a href="#">网店</a>
+					</li>
+					<li class="am-active">网店设置</li>
+				</ol>
+				<div class="row">
+					<div class="am-u-md-12 am-u-sm-12 row-mb">
+						<div class="tpl-portlet">
+							<div class="tpl-portlet-title" style="overflow: inherit;">
+								<span class="bold">网店设置</span>
+							</div>
+							<div class="tpl-block">
 
-				<div class="tpl-portlet">
-					<div class="tpl-portlet-components">
+								<div class="am-g">
+									<div class="tpl-form-body tpl-form-line">
+										<form class="am-form tpl-form-line-form">
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店状态 <span class="tpl-form-line-small-title">开启和关闭网店服务</span></label>
+												
+											<div class="tpl-switch am-fr">
+												<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+													<div class="tpl-switch-btn-view">
+														<div>
+														</div>
+													</div>
+											</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店URL <span class="tpl-form-line-small-title">WWWmeilian.pospal.cn</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-success am-fr am-btn-sm">微店二维码</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">微店模板<span class="tpl-form-line-small-title">WWWmeilian.pospal.cn</span></label>
+												
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-primary am-fr am-btn-sm">保存</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店LOGO<span class="tpl-form-line-small-title"></span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">营业时间<span class="tpl-form-line-small-title">
+													10:39:00 - 23:59:59，10:59:00 - 18:59:59
+													<!--<input type="date" name="" id="" value="" /><span>&nbsp&nbsp-&nbsp&nbsp</span><input type="date" name="" id="" value="" />-->
+												</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">下单限制<span class="tpl-form-line-small-title">非运营时间是否允许下单</span></label>
+												<div class="am-u-sm-9">
+												</div>
+													<div class="right_btn am-fr btn_floag">
+														<div class="tpl-switch am-fr">
+															<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+																<div class="tpl-switch-btn-view">
+																	<div>
+																	</div>
+																</div>
+														</div>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">配送条件<span class="tpl-form-line-small-title">可按配送距离设置起送价、配送费、送货时长等参数</span></label>
+													<div class=" right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">下单提醒<span class="tpl-form-line-small-title">无</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">消费方式<span class="tpl-form-line-small-title">外卖</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">支付方式<span class="tpl-form-line-small-title">送货上门、会员余额支付</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">网店推广<span class="tpl-form-line-small-title">App新会员赠送 0 元</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">签到奖励<span class="tpl-form-line-small-title">未开启</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<button type="button" class="am-btn am-btn-default am-fr am-btn-sm">编辑</button>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">积分抵现<span class="tpl-form-line-small-title">会员在网店消费，是否允许积分抵现</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<div class="tpl-switch am-fr">
+															<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+																<div class="tpl-switch-btn-view">
+																	<div>
+																	</div>
+																</div>
+														</div>
+													</div>
+											</div>
+											<div class="am-form-group">
+												<label for="user-name" class="am-form-label font-green">零库存销售<span class="tpl-form-line-small-title">商品库存低于0时，网店是否允许销售</span></label>
+													<div class="right_btn am-fr btn_floag">
+														<div class="tpl-switch am-fr">
+															<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
+																<div class="tpl-switch-btn-view">
+																	<div>
+																	</div>
+																</div>
+														</div>
+													</div>
+											</div>
+											<div class="txt">
+												<textarea class="text_boxs" name="" id="text_boxs" cols="100" rows="5">网店简介</textarea>
+												<div class="tpl-switch am-fr preservation am-fr txt_btn">
+													<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn " checked />
+													<div class="tpl-switch-btn-view">
+														<div>
+														</div>
+													</div>
+												</div>
+												<div id="" class="btm_text">
+													<span  class="tpl-form-line-small-title">网店简介不超过150字</span>
+													<span class="txt_right">还剩<span class="red_text">150</span>字</span>
+												</div>
 
-						<h6 class="tit_list">网店设置</h6>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-					              	网店状态
-					    </span>
-							<span class="tpl-form-line-small-title text_">开启和关闭网店服务</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<div class="tpl-switch">
-									<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
-									<div class="tpl-switch-btn-view">
-										<div>
-										</div>
+											</div>
+										</form>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 网店URL
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">WWWmeilian.pospal.cn</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-success am-fr">微店二维码</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 微店模板
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">WWWmeilian.pospal.cn</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-primary am-fr">保存</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 网店LOGO
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">WWWmeilian.pospal.cn</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 营业时间
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">00:00:00 - 23:59:59</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 下单限制
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">非运营时间是否允许下单</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<div class="tpl-switch">
-									<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
-									<div class="tpl-switch-btn-view">
-										<div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 配送条件
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">可按配送距离设置起送价、配送费、送货时长等参数</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 下单提醒
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">无</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 消费方式
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">外卖</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 支付方式
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">送货上门、会员余额支付</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 网店推广
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">App新会员赠送 0 元</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 签到奖励
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">未开启</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<button type="button" class="am-btn am-btn-secondary">编辑</button>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 积分抵现
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">会员在网店消费，是否允许积分抵现</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<div class="tpl-switch">
-									<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
-									<div class="tpl-switch-btn-view">
-										<div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="portlet-title">
-							<span class="caption font-green bold first_text">
-	                        	 零库存销售
-	                    	</span>
-							<span class="tpl-form-line-small-title text_">商品库存低于0时，网店是否允许销售</span>
-							<div class="am-u-sm-9 right_btn am-fr btn_floag">
-								<div class="tpl-switch">
-									<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
-									<div class="tpl-switch-btn-view">
-										<div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div>
-							<textarea class="text_boxs" name="" id="" cols="100" rows="8"></textarea>
-							<span>网店简介不超过150字</span>
-							<div class="tpl-switch">
-									<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" checked />
-									<div class="tpl-switch-btn-view">
-										<div>
-										</div>
-									</div>
-								</div>
 						</div>
 					</div>
 				</div>
+
+			</div>
+		</div>
 
 	</body>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/amazeui.min.js"></script>
 	<script src="assets/js/iscroll.js"></script>
 	<script src="assets/js/app.js"></script>
+	<script type="text/javascript">
+	</script>
 
 </html>
