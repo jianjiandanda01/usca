@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>占比统计</title>
+		<title>销售单据</title>
 		<meta name="description" content="这是一个 index 页面">
 		<meta name="keywords" content="index">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
 
 	<body data-type="index">
 
-		<header class="am-topbar am-topbar-inverse admin-header" >
+		<header class="am-topbar am-topbar-inverse admin-header">
 			<div class="am-topbar-brand">
 				<a href="javascript:;" class="tpl-logo">
 					<img src="assets/img/logo.png" alt="">
@@ -41,7 +41,8 @@
 						</a>
 						<ul class="am-dropdown-content tpl-dropdown-content">
 							<li class="tpl-dropdown-content-external">
-								<a href="###"><h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3></a>
+								<a href="###">
+									<h3>你有 <span class="tpl-color-success">5</span> 条提醒</h3></a>
 							</li>
 							<li class="tpl-dropdown-list-bdbc">
 								<a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> 【预览模块】移动端 查看时 手机、电脑框隐藏。</a>
@@ -63,8 +64,9 @@
 						</a>
 						<ul class="am-dropdown-content tpl-dropdown-content">
 							<li class="tpl-dropdown-content-external">
-								<a href="###"><h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3>
-							</a>
+								<a href="###">
+									<h3>你有 <span class="tpl-color-danger">9</span> 条新消息</h3>
+								</a>
 							</li>
 							<li>
 								<a href="#" class="tpl-dropdown-content-message">
@@ -88,6 +90,7 @@
 									<span class="tpl-dropdown-content-font"> 为了能最准确的传达所描述的问题， 建议你在反馈时附上演示，方便我们理解。 </span>
 								</a>
 							</li>
+
 						</ul>
 					</li>
 					<li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
@@ -96,7 +99,8 @@
 						</a>
 						<ul class="am-dropdown-content tpl-dropdown-content">
 							<li class="tpl-dropdown-content-external">
-								<a href="###"><h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3>
+								<a href="###">
+									<h3>你有 <span class="tpl-color-primary">4</span> 个任务进度</h3>
 								</a>
 							</li>
 							<li>
@@ -180,61 +184,80 @@
 					<li>
 						<a href="#">销售</a>
 					</li>
-					<li class="am-active">占比统计</li>
+					<li class="am-active">销售单据</li>
 				</ol>
-				<div class="tpl-portlet-title" style="overflow: inherit;">
-					<button type="button" class="am-btn am-btn-secondary btn_export">导出</button>
-					<div class="am-center am-form am-form-inline am-fr">
-						
-						<div class="am-form-group am-form-icon">
-							<i class="am-icon-calendar"></i>
-							<input type="date" class="am-form-field" placeholder="日期">
+				<div class="row">
+
+					<div class="am-u-md-12 am-u-sm-12 row-mb">
+						<div class="tpl-portlet">
+							<div class="tpl-portlet-title" style="overflow: inherit;">
+								<div class="am-center am-form am-form-inline">
+									<select data-am-selected="{btnSize: 'xm'}" style="display: none;">
+										<option value="option1">全部收银员</option>
+										<option value="option3">聚合支付</option>
+									</select>
+									<select data-am-selected="{btnSize: 'xm'}" style="display: none;">
+										<option value="option1">全部支付方式</option>
+										<option value="option2">现金</option>
+										<option value="option3">银联卡</option>
+										<option value="option3">会员储值卡</option>
+										<option value="option3">次卡</option>
+										<option value="option3">购物卡</option>
+										<option value="option3">预付卡</option>
+										<option value="option3">聚合支付</option>
+									</select>
+									<select data-am-selected="{btnSize: 'xm'}" style="display: none;">
+										<option value="option1">有效单据</option>
+										<option value="option2">退货单据</option>
+										<option value="option3">会员单据</option>
+										<option value="option3">批发单据</option>
+									</select>
+									<div class="am-form-group am-form-icon">
+										<i class="am-icon-calendar"></i>
+										<input type="date" class="am-form-field" placeholder="日期">
+									</div>
+									-
+									<div class="am-form-group am-form-icon">
+										<i class="am-icon-calendar"></i>
+										<input type="date" class="am-form-field" placeholder="日期">
+									</div>
+									<div class="am-btn-group am-btn-group-xs">
+										
+										
+	                                    <button type="button" class="am-btn am-btn-default am-btn-success"><span class="fa-search-plus"></span>查询</button>
+	                               </div>
+								</div>
+							</div>
+							<div class="">
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+								
+							</div>
 						</div>
-						
-						<button class="am-form-group am-btn am-btn-success">
-							查询
-						</button>
 					</div>
+
 				</div>
-			<table class="am-table am-table-striped am-table-hover table-main">
-	             <thead>
-	                <tr>
-	                    <th class="table-title">序号</th>
-	                    <th class="table-date">商品分类</th>
-	                    <th class="table-date">销售单数</th>
-	                    <th class="table-title">商品数量</th>
-	                    <th class="table-author am-hide-sm-only">商品原价</th>
-	                    <th class="table-date am-hide-sm-only">实收金额</th>
-	                    <th class="table-set">利润</th>
-	                </tr>
-	            </thead>
-	            <tbody>
-	                <tr>
-	                    <td></td>
-	                    <td>1</td>
-	                    <td><a href="#">Business management</a></td>
-	                    <td>default</td>
-	                    <td class="am-hide-sm-only">测试1号</td>
-	                    <td class="am-hide-sm-only">2014年9月4日 7:28:47</td>
-	                    <td>
-	                    	<div class="am-btn-toolbar">
-	                        	<div class="am-btn-group am-btn-group-xs">
-	                           	 <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
-	                           	 <button class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 复制</button>
-	                           	 <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
-	                        	</div>
-	                    	</div>
-	                    </td>
-	 				</tr>
-				</tbody>
-	        </table>
+
 			</div>
-			
+
 		</div>
-		
+		</div>
+
 	</body>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/amazeui.min.js"></script>
 	<script src="assets/js/iscroll.js"></script>
 	<script src="assets/js/app.js"></script>
+	<script type="text/javascript">
+	</script>
+
 </html>
