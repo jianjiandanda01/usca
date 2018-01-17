@@ -12,3 +12,16 @@
 	display: inline-block;
 }
 
+.btnCodeImg{
+	display: none;
+}
+
+.btnCode:hover .btnCodeImg{
+	display: block;
+}
+.btnCode:hover .btnCodeSpan{
+	display: none;
+}
+input[type=file],.editorD,.tpl-form-line-form select{
+	display: none !important;
+}

@@ -478,12 +478,12 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 
 .tpl-left-nav {
     width: 235px;
-	position: fixed;
-	top: 90px;
-	left: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 	/*float: left;*/
     background: #fff;
-    border-radius: 6px;
+    border-radius: 0px;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     padding-bottom: 0px;
 }
@@ -1794,12 +1794,13 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 }
 
 .tpl-form-line-form .am-form-group {
-    /*padding: 20px 0;*/
+    border-bottom: 1px solid #eee;
 }
 
 .tpl-form-line-form .am-form-label .tpl-form-line-small-title {
     color: #999;
     font-size: 12px;
+    margin-left: 10px;
 }
 
 .tpl-form-no-bg {
@@ -1981,7 +1982,7 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 
 .myapp-login .am-form-group {
     margin-bottom: 0;
-    border-bottom: 1px solid #eee;;
+
 }
 
 .login-am-center {
@@ -2050,6 +2051,11 @@ ul.tpl-dropdown-content li>a.tpl-dropdown-content-message:last-child {
 }
 .dis_block{
 	display: block;
+}
+.div_data{
+	width: 500px !important;
+	padding: 6px 20px !important;
+	display: inline-block !important;
 }
 /*加改css*/
 .emphasesText{
