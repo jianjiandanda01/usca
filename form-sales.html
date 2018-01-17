@@ -191,7 +191,12 @@
 					<div class="am-u-md-12 am-u-sm-12 row-mb">
 						<div class="tpl-portlet">
 							<div class="tpl-portlet-title" style="overflow: inherit;">
-								<div class="am-center am-form am-form-inline">
+								<button type="button" class="am-btn am-btn-secondary btn_export am-btn-sm">导出</button>
+								<span class="am-btn-sm am-btn-default">
+									<input type="checkbox" name="sales" id="sales" value="" />
+									<label for="sales">显示单据明细</label>
+								</span>
+								<div class="am-center am-form am-form-inline am-fr">
 									<select data-am-selected="{btnSize: 'xm'}" style="display: none;">
 										<option value="option1">全部收银员</option>
 										<option value="option3">聚合支付</option>
@@ -222,26 +227,32 @@
 										<input type="date" class="am-form-field" placeholder="日期">
 									</div>
 									<div class="am-btn-group am-btn-group-xs">
-										
-										
 	                                    <button type="button" class="am-btn am-btn-default am-btn-success"><span class="fa-search-plus"></span>查询</button>
 	                               </div>
 								</div>
 							</div>
-							<div class="">
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								<br />
-								
-							</div>
+							<table class="am-table am-table-striped am-table-hover table-main">
+				             <thead>
+				                <tr>
+				                    <th class="table-title">序号</th>
+				                    <th class="table-date">流水号</th>
+				                    <th class="table-date">日期</th>
+				                    <th class="table-title">类型</th>
+				                    <th class="table-author am-hide-sm-only">收银员</th>
+				                    <th class="table-date am-hide-sm-only">会员</th>
+				                    <th class="table-date am-hide-sm-only">商品数量</th>
+				                    <th class="table-date am-hide-sm-only">商品原价</th>
+				                    <th class="table-date am-hide-sm-only">实收金额</th>
+				                    <th class="table-date am-hide-sm-only">利润</th>
+				                    <th class="table-date am-hide-sm-only">导购员</th>
+				                </tr>
+				            </thead>
+				            <tbody>
+				                <tr>
+				                    <td colspan="11">暂无数据</td>
+				 				</tr>
+							</tbody>
+				      </table>	
 						</div>
 					</div>
 
